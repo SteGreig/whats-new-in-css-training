@@ -19,3 +19,25 @@ body {
   background: var(--background);
   @apply bg-yellow-500 font-sans;
 }
+
+
+::selection {
+  @apply bg-black text-white;
+}
+
+.slide {
+  animation: fadeInUpScale linear;
+  animation-timeline: view();
+  animation-range: 0 100vh;
+}
+
+@keyframes fadeInUpScale {
+  from {
+    transform: scale(0.3) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    filter: grayscale(0);
+    transform: scale(1) translateY(0);
+  }
+}
