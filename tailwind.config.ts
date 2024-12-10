@@ -23,7 +23,9 @@ export default {
       "4xl": "118.75rem", /* 1900px */
     },
     fontFamily: {
-      sans: ["var(--font-chaney-reg)", "sans-serif"],
+      sans: ["var(--font-geist-sans)", "sans-serif"],
+      mono: ["var(--font-geist-mono)", "sans-serif"],
+      primary: ["var(--font-chaney-reg)", "sans-serif"],
       wide: ["var(--font-chaney-wide)", "sans-serif"],
       ultraext: ["var(--font-chaney-reg-ultra-ext)", "sans-serif"],
     },
