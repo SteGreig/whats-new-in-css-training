@@ -19,6 +19,10 @@ export default function Home() {
       <Slide>
         <p>Slide Two</p>
       </Slide>
+
+      <Slide>
+        <p>Slide Three</p>
+      </Slide>
     
     </div>
   );

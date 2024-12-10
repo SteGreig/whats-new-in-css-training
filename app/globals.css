@@ -41,3 +41,13 @@ body {
     transform: scale(1) translateY(0);
   }
 }
+
+header {
+  animation: blur linear forwards;
+  animation-timeline: scroll();
+}
+
+@keyframes blur {
+  40% { filter: blur(20px); opacity: 0; }
+  100% { filter: blur(20px); opacity: 0; }
+}
