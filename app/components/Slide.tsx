@@ -1,21 +1,25 @@
 
 const Slide = ({
   children,
-  classes
+  id,
+  wrapperClasses,
+  boxClasses
 }: Readonly<{
   children: React.ReactNode;
-  classes?: string;
+  id?: string;
+  wrapperClasses?: string;
+  boxClasses?: string;
 }>) => {
   return (
-    <div className="snap-start">
-      <section className={`slide w-full ~p-4/20 h-screen sticky top-0 z-10 ${classes}`}>
-        <div className=" overflow-auto h-full bg-white rounded-3xl w-full max-w-screen-2xl mx-auto ~p-6/20 shadow-2xl shadow-yellow-700 flex">
+    <div id={id} className="snap-start">
+      <section className={`slide w-full ~p-4/20 h-screen sticky top-0 z-10 ${wrapperClasses}`}>
+        <div className={`overflow-auto h-full bg-white rounded-3xl w-full max-w-screen-2xl mx-auto ~p-6/20 shadow-2xl shadow-yellow-700 content-center font-semibold ~text-base/2xl ${boxClasses}`}>
           
           {children}
 
         </div>
       </section>
-      <div className="w-full bg-red h-[500px] relative z-50"></div>
+      <div className="w-full bg-red h-[500px] relative z-50 pointer-events-none"></div>
     </div>
   )
 }

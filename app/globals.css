@@ -14,10 +14,14 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  @apply bg-yellow-500 font-sans;
+  @apply bg-yellow-500 font-mono;
 }
 
 
@@ -34,6 +38,7 @@ body {
 @keyframes fadeInUpScale {
   from {
     transform: scale(0.3) translateY(30px);
+    filter: grayscale(1)
   }
   to {
     opacity: 1;
@@ -50,4 +55,8 @@ header {
 @keyframes blur {
   40% { filter: blur(20px); opacity: 0; }
   100% { filter: blur(20px); opacity: 0; }
+}
+
+.slide-heading {
+  @apply ~text-3xl/4xl font-primary uppercase font-normal;
 }
