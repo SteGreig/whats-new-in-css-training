@@ -1,10 +1,9 @@
 
-import Slide from "./components/Slide";
+import SlidesList from "./components/SlidesList";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 
 import slides from "./slides/home";
-import { SlideContent } from "./types/SlideContent";
 
 export default function Home() {
   return (
@@ -16,11 +15,7 @@ export default function Home() {
         </a>
       </Header>
 
-      {slides.map((slide: SlideContent, i: number) => (
-        <Slide key={i} id={i} wrapperClasses={slide.wrapperClasses} boxClasses={slide.boxClasses} isLast={i === slides.length - 1}>
-          {slide.content}
-        </Slide>
-      ))}
+      <SlidesList slides={slides} />
 
       <Navigation
         title="Evolution of CSS"

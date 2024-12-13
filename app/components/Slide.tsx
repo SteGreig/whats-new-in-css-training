@@ -39,7 +39,7 @@ const Slide = ({
 
         </div>
       </section>
-      <div className="w-full bg-red h-[500px] relative z-50 pointer-events-none"></div>
+      {/* <div className="w-full bg-red h-[500px] relative z-50 pointer-events-none"></div> */}
     </div>
   )
 }

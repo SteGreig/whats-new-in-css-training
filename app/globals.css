@@ -106,5 +106,7 @@ figcaption {
 }
 
 baseline-status {
-  @apply w-full border border-slate-500 rounded-2xl bg-gradient-to-t from-slate-100;
+  @apply w-full border border-slate-400 rounded-2xl bg-gradient-to-t from-slate-100;
+  font-size: 1rem;
+  line-height: 1.5;
 }

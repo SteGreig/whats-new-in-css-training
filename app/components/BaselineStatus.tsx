@@ -4,9 +4,10 @@ import React, { useEffect } from "react";
 
 interface BaselineStatusProps {
   featureId: string;
+  classes?: string;
 }
 
-const BaselineStatus: React.FC<BaselineStatusProps> = ({ featureId }) => {
+const BaselineStatus: React.FC<BaselineStatusProps> = ({ featureId, classes }) => {
   useEffect(() => {
     import("baseline-status");
   }, []);
@@ -14,7 +15,7 @@ const BaselineStatus: React.FC<BaselineStatusProps> = ({ featureId }) => {
   // Render using dangerouslySetInnerHTML to avoid JSX conflicts
   return (
     <div
-      className="w-full bg-red flex justify-center text-left text-base"
+      className={`${classes}`}
       dangerouslySetInnerHTML={{
         __html: `<baseline-status featureId="${featureId}"></baseline-status>`,
       }}
