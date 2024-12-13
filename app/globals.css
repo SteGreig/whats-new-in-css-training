@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  interpolate-size: allow-keywords;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,10 +45,10 @@ body {
   animation-range: 0 100vh;
   transform-origin: top;
   backface-visibility: hidden;
+}
 
-  a {
-    @apply underline text-blue-500 hover:bg-blue-500 hover:text-white transition;
-  }
+.slide a:not(.btn) {
+  @apply underline text-blue-500 hover:bg-blue-500 hover:text-white transition;
 }
 
 @keyframes fadeInUpScale {
@@ -102,4 +103,8 @@ figcaption {
   50% {
     transform: scale(1.1);
   }
+}
+
+baseline-status {
+  @apply w-full border border-slate-500 rounded-2xl bg-gradient-to-t from-slate-100;
 }

@@ -1,6 +1,7 @@
 
 import Slide from "./components/Slide";
 import Header from "./components/Header";
+import Navigation from "./components/Navigation";
 
 import slides from "./slides/home";
 import { SlideContent } from "./types/SlideContent";
@@ -21,7 +22,10 @@ export default function Home() {
         </Slide>
       ))}
 
-      <a className="m-40 fixed z-50 bottom-0 left-40" href="/text-wrap-balance">Next Page</a>
+      <Navigation
+        title="Evolution of CSS"
+        nextLink='/text-wrap-balance'
+      />
     
     </>
   );

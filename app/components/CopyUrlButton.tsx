@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { IoIosLink } from "react-icons/io";
 
 interface CopyUrlButtonProps {
   anchor?: string; // Optional anchor link to append
@@ -30,9 +31,10 @@ export default function CopyUrlButton({ anchor, buttonText = "Copy URL" }: CopyU
   return (
     <button 
       onClick={handleCopy} 
-      className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"
+      className="p-2 w-9 hover:w-auto h-9 transition-all overflow-hidden border-slate-400 hover:border-black border rounded-full focus:outline-none text-sm flex items-center gap-2"
     >
-      {copied ? "Copied!" : buttonText}
+      <IoIosLink className="text-xl flex-none" />
+      <span className={`whitespace-nowrap`}>{copied ? "Copied!" : buttonText}</span>
     </button>
   );
 }

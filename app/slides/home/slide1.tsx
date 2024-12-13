@@ -1,6 +1,6 @@
 
 export default {
-  boxClasses: "flex",
+  boxClasses: "flex flex-col",
   content: (
     <div className="m-auto text-center">
       <h2 className="slide-heading">The current state of CSS and how it got here</h2>

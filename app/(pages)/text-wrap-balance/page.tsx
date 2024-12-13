@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Slide from "../../components/Slide";
 import Header from "../../components/Header";
+import Navigation from "../../components/Navigation";
+import BaselineStatus from "@/app/components/BaselineStatus";
 
 export default function page() {
   return (
@@ -17,10 +19,16 @@ export default function page() {
             <span className="~text-xs/lg font-mono uppercase tracking-widest">A Quick Overview</span>
             <span className="h-px flex-1 bg-black"></span>
           </p>
+          <BaselineStatus featureId="text-wrap-balance" />
+
         </div>
       </Slide>
 
-      <a className="m-40 fixed z-50 bottom-0 left-40" href="/">Prev Page</a>
+      <Navigation
+        title="text-wrap: balance"
+        prevLink="/"
+        nextLink='/text-wrap-balance'
+      />
     
     </>
   );
