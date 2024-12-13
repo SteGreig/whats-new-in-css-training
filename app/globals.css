@@ -14,6 +14,11 @@
   }
 }
 
+@view-transition {
+  navigation: auto;
+  types: slide, forwards;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -80,17 +85,21 @@ figcaption {
   transition: .3s;
   @apply hover:border-yellow-800;
 }
+
+.pulse:hover {
+  animation-play-state: paused;
+}
+
 .pulse svg {
   transition: .3s;
 }
 
 .pulse:hover svg {
-  rotate: 90deg;
   @apply fill-yellow-800;
 }
 
 @keyframes pulse {
   50% {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 }
