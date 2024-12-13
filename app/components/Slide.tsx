@@ -11,9 +11,9 @@ const Slide = ({
   boxClasses?: string;
 }>) => {
   return (
-    <div id={id} className="snap-start">
-      <section className={`slide w-full ~p-4/20 h-screen sticky top-0 z-10 ${wrapperClasses}`}>
-        <div className={`overflow-auto h-full bg-white rounded-3xl w-full max-w-screen-2xl mx-auto ~p-6/20 shadow-2xl shadow-yellow-700 content-center font-semibold ~text-base/2xl ${boxClasses}`}>
+    <div id={id} className="slide-wrap">
+      <section className={`slide w-full ~p-4/20 min-h-screen sticky top-0 z-10 ${wrapperClasses}`}>
+        <div className={`min-h-[600px] bg-white rounded-3xl w-full max-w-screen-2xl mx-auto ~px-6/24 ~py-8/24 shadow-2xl shadow-yellow-700 content-center font-semibold ~text-base/2xl ${boxClasses}`}>
           
           {children}
 

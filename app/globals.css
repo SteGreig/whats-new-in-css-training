@@ -29,16 +29,26 @@ body {
   @apply bg-black text-white;
 }
 
+.slide-wrap {
+  perspective: 1000px;
+}
+
 .slide {
   animation: fadeInUpScale linear;
   animation-timeline: view();
   animation-range: 0 100vh;
+  transform-origin: top;
+  backface-visibility: hidden;
+
+  a {
+    @apply underline text-blue-500 hover:bg-blue-500 hover:text-white transition;
+  }
 }
 
 @keyframes fadeInUpScale {
   from {
-    transform: scale(0.3) translateY(30px);
-    filter: grayscale(1)
+    transform: scale(0.3);
+    filter: grayscale(1);
   }
   to {
     opacity: 1;
@@ -59,4 +69,28 @@ header {
 
 .slide-heading {
   @apply ~text-3xl/4xl font-primary uppercase font-normal;
+}
+
+figcaption {
+  @apply text-gray-400 text-sm mt-1;
+}
+
+.pulse {
+  animation: pulse 2s infinite ease-in;
+  transition: .3s;
+  @apply hover:border-yellow-800;
+}
+.pulse svg {
+  transition: .3s;
+}
+
+.pulse:hover svg {
+  rotate: 90deg;
+  @apply fill-yellow-800;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.05);
+  }
 }
