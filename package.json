@@ -11,14 +11,17 @@
   "dependencies": {
     "baseline-status": "^1.0.10",
     "next": "15.0.4",
+    "prismjs": "^1.29.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "react-refractor": "^3.1.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/refractor": "^3.4.0",
     "eslint": "^8",
     "eslint-config-next": "15.0.4",
     "fluid-tailwind": "^1.0.4",

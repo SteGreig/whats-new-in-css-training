@@ -110,3 +110,8 @@ baseline-status {
   font-size: 1rem;
   line-height: 1.5;
 }
+
+.wrap-text.wrap-text pre code {
+  white-space: pre-wrap; /* Wrap long lines */
+  word-break: break-word; /* Break long words */
+}
