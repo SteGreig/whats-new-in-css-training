@@ -1,10 +1,3 @@
-import BaselineStatus from "@/app/components/BaselineStatus";
-import CodeBlock from "@/app/components/CodeBlock";
-
-const codeTW = `<h1 class="text-balance">My headline that spans multiple lines</h1>`;
-const codeCSS = `h1 {
-    text-wrap: balance;
-}`;
 
 export default {
   boxClasses: "flex flex-wrap gap-5 text-base mb-96",

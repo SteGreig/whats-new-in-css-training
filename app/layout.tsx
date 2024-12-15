@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+import SlideoutMenu from "./components/SlideoutMenu";
+
 const chaneyReg = localFont({
   src: "./fonts/CHANEY-Regular.otf",
   variable: "--font-chaney-reg",
@@ -48,6 +50,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${chaneyReg.variable} ${chaneyWide.variable} ${chaneyUltraExt.variable} antialiased`}
       >
         {children}
+
+        <SlideoutMenu />
       </body>
     </html>
   );
