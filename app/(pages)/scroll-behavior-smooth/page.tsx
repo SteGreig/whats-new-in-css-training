@@ -3,21 +3,21 @@ import SlidesList from "../../components/SlidesList";
 import Header from "../../components/Header";
 import Navigation from "../../components/Navigation";
 
-import slides from "../../slides/text-wrap-balance";
+import slides from "../../slides/scroll-behavior-smooth";
 
 export default function page() {
   return (
     <>
 
-      <Header leftSubtitle="text-wrap: balance">
+      <Header leftSubtitle="scroll-behavior: smooth">
       </Header>
 
       <SlidesList slides={slides} />
 
       <Navigation
-        title="text-wrap: balance"
+        title="scroll-behavior: smooth"
         prevLink="/"
-        nextLink='/scroll-behavior-smooth'
+        nextLink='/text-wrap-balance'
       />
     
     </>
