@@ -16,7 +16,7 @@ export default function page() {
 
       <Navigation
         title="scroll-behavior: smooth"
-        prevLink="/"
+        prevLink="/text-wrap-balance"
         nextLink='/text-wrap-balance'
       />
     

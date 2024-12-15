@@ -52,6 +52,10 @@ export default function RootLayout({
         {children}
 
         <SlideoutMenu />
+
+        <footer className="my-20 lg:my-6 flex justify-center relative z-40">
+          <p>Made by <a className="underline hover:bg-black hover:text-white transition" href="https://ste.digital/">Ste Greig</a></p>
+        </footer>
       </body>
     </html>
   );
