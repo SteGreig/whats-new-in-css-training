@@ -16,7 +16,7 @@ const Navigation = ({
   //return (<></>)
 
   return (
-    <div className="rounded-full fixed bottom-2 right-2 p-2 pl-4 flex items-center justify-end bg-white shadow-lg">
+    <div className="rounded-full fixed bottom-2 right-2 p-2 pl-4 z-40 flex items-center justify-end bg-white shadow-lg">
       <p className="mr-3 text-sm">{title}</p>
       <nav className="">
         <ul className="flex gap-2">

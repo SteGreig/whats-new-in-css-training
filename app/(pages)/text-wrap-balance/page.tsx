@@ -1,25 +1,14 @@
-
+import DefaultTemplate from "../../components/DefaultTemplate"
 import SlidesList from "../../components/SlidesList";
-import Header from "../../components/Header";
-import Navigation from "../../components/Navigation";
 
 import slides from "../../slides/text-wrap-balance";
 
 export default function page() {
   return (
-    <>
-
-      <Header leftSubtitle="text-wrap: balance">
-      </Header>
-
-      <SlidesList slides={slides} />
-
-      <Navigation
-        title="text-wrap: balance"
-        prevLink="/"
-        nextLink='/scroll-behavior-smooth'
-      />
+    <DefaultTemplate title="text-wrap: balance" prevSlug="/" nextSlug="/scroll-behavior-smooth">
     
-    </>
+      <SlidesList slides={slides} />
+    
+    </DefaultTemplate>
   );
 }

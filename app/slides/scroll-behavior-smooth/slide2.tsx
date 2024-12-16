@@ -1,6 +1,6 @@
 
 export default {
-  boxClasses: "flex flex-wrap gap-5 text-base mb-96",
+  boxClasses: "flex flex-wrap gap-5 text-base mb-[100vh]",
   content: (
     <>
       <ul className="w-full">
