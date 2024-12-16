@@ -6,7 +6,7 @@ import slides from "../../slides/scroll-behavior-smooth";
 
 export default function page() {
   return (
-    <DefaultTemplate title="scroll-behaviour: smooth" prevSlug="/text-wrap-balance" nextSlug="/align-content-block-layout">
+    <DefaultTemplate title="scroll-behaviour: smooth" prevSlug="/text-wrap-balance" nextSlug="/align-content-block-layouts">
     
       <SlidesList slides={slides} />
     
