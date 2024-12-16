@@ -119,3 +119,7 @@ baseline-status {
   white-space: pre-wrap; /* Wrap long lines */
   word-break: break-word; /* Break long words */
 }
+
+pre.refractor {
+  @apply shadow-xl;
+}
