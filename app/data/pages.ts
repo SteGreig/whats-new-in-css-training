@@ -15,6 +15,14 @@ const pages = [
     title: "align-content in Block Layout",
     slug: '/align-content-block-layouts',
   },
+  {
+    title: "isolate",
+    slug: '/isolate',
+  },
+  {
+    title: "inset",
+    slug: '/inset',
+  },
 ]
 
 export default pages

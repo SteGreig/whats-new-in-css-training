@@ -1,14 +1,14 @@
 import DefaultTemplate from "../../components/DefaultTemplate"
 import SlidesList from "../../components/SlidesList";
 
-import slides from "../../slides/align-content-block-layouts";
+import slides from "../../slides/inset";
 
 export default function page() {
   return (
     <DefaultTemplate
-      title="align-content in Block Layouts"
-      prevSlug="/scroll-behavior-smooth"
-      nextSlug="/isolate"
+      title="inset"
+      prevSlug="/isolate"
+      nextSlug="/light-dark-function"
     >
     
       <SlidesList slides={slides} />
