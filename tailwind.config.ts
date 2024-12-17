@@ -10,6 +10,7 @@ export default {
     ],
     extract
   },
+  darkMode: 'selector',
   theme: {
     screens: {
       "2xs": "23.4375rem", /* 375px */

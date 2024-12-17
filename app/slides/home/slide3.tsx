@@ -4,7 +4,7 @@ export default {
       <h2 className="slide-heading ~mb-4/10 text-center">The original CSS mega specs</h2>
 
       <div className="flex flex-wrap gap-4">
-        <div className="p-8 lg:py-12 border border-black content-center w-full md:w-auto md:flex-1 text-center">
+        <div className="p-8 lg:py-12 border border-black dark:border-white content-center w-full md:w-auto md:flex-1 text-center">
           <p className="slide-heading">CSS 1.0</p>
           <span className="text-lg">Released 1996</span>
           <ul className="mt-2 text-sm">
@@ -14,7 +14,7 @@ export default {
             <li>etc.</li>
           </ul>
         </div>
-        <div className="p-8 lg:py-12 border border-black content-center w-full md:w-auto md:flex-1 text-center">
+        <div className="p-8 lg:py-12 border border-black dark:border-white content-center w-full md:w-auto md:flex-1 text-center">
           <p className="slide-heading">CSS 2.0</p>
           <span className="text-lg">Released 1998</span>
           <ul className="mt-2 text-sm">
@@ -24,7 +24,7 @@ export default {
             <li>etc.</li>
           </ul>
         </div>
-        <div className="p-8 lg:py-12 border border-black content-center w-full md:w-auto md:flex-1 text-center">
+        <div className="p-8 lg:py-12 border border-black dark:border-white content-center w-full md:w-auto md:flex-1 text-center">
           <p className="slide-heading">CSS 2.1</p>
           <span className="text-lg">Released 2011</span>
           <ul className="mt-2 text-sm">
@@ -39,28 +39,28 @@ export default {
       <h2 className="slide-heading ~mb-4/10 ~mt-8/16 text-center">CSS 3</h2>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="~p-2/8 border border-black content-center w-full md:w-auto text-center">
+        <div className="~p-2/8 border border-black dark:border-white content-center w-full md:w-auto text-center">
           <p className="font-primary ~text-base/xl font-normal leading-none">CSS Selectors Level 3</p>
         </div>
-        <div className="~p-2/8 border border-black content-center w-full md:w-auto text-center">
+        <div className="~p-2/8 border border-black dark:border-white content-center w-full md:w-auto text-center">
           <p className="font-primary ~text-base/xl font-normal leading-none">CSS Text Level 3</p>
         </div>
-        <div className="~p-2/8 border border-black content-center w-full md:w-auto text-center">
+        <div className="~p-2/8 border border-black dark:border-white content-center w-full md:w-auto text-center">
           <p className="font-primary ~text-base/xl font-normal leading-none">CSS Flexible Box Layout Level 1</p>
         </div>
-        <div className="~p-2/8 border border-black content-center w-full md:w-auto text-center">
+        <div className="~p-2/8 border border-black dark:border-white content-center w-full md:w-auto text-center">
           <p className="font-primary ~text-base/xl font-normal leading-none">CSS Transitions Level 1</p>
         </div>
-        <div className="~p-2/8 border border-black content-center w-full md:w-auto text-center">
+        <div className="~p-2/8 border border-black dark:border-white content-center w-full md:w-auto text-center">
           <p className="font-primary ~text-base/xl font-normal leading-none">CSS Colour Level 3</p>
         </div>
-        <div className="~p-2/8 border border-black content-center w-full md:w-auto text-center">
+        <div className="~p-2/8 border border-black dark:border-white content-center w-full md:w-auto text-center">
           <p className="font-primary ~text-base/xl font-normal leading-none">CSS Animations Level 1</p>
         </div>
-        <div className="~p-2/8 border border-black content-center w-full md:w-auto text-center">
+        <div className="~p-2/8 border border-black dark:border-white content-center w-full md:w-auto text-center">
           <p className="font-primary ~text-base/xl font-normal leading-none">CSS Box Model Level 3</p>
         </div>
-        <div className="~p-2/8 border border-black content-center w-full md:w-auto text-center">
+        <div className="~p-2/8 border border-black dark:border-white content-center w-full md:w-auto text-center">
           <p className="font-primary ~text-base/xl font-normal leading-none">etc. etc.</p>
         </div>
       </div>

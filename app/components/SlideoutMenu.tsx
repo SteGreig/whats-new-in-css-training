@@ -19,14 +19,14 @@ const SlideoutMenu = () => {
       {/* Menu Trigger */}
       <button
         onClick={toggleMenu}
-        className="w-10 h-10 rounded-full bg-white left-2 bottom-2 fixed z-[51] flex justify-center items-center text-xl transition hover:scale-105 shadow-lg"
+        className="w-10 h-10 rounded-full bg-white text-black left-2 bottom-2 fixed z-[51] flex justify-center items-center text-xl transition hover:scale-105 shadow-lg"
       >
         {isOpen ? <AiOutlineClose /> : <HiBars3BottomLeft />}
       </button>
 
       {/* Off-canvas menu */}
       <div
-        className={`${isOpen ? "shadow-2xl translate-x-0" : "-translate-x-full"} fixed top-0 left-0 h-screen w-full max-w-screen-xs bg-yellow-500 z-50 transition duration-300 ~p-8/14`}
+        className={`${isOpen ? "shadow-2xl translate-x-0" : "-translate-x-full"} fixed top-0 left-0 h-screen w-full max-w-screen-xs bg-yellow-500 dark:bg-gray-900 z-50 transition duration-300 ~p-8/14`}
       >
         <div className="flex items-center mb-4 gap-4">
           <p className="font-primary font-normal text-xl">Menu</p>

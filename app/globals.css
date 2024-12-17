@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
   interpolate-size: allow-keywords;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  color-scheme: dark;
 }
 
 @view-transition {
@@ -24,9 +20,7 @@ html {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  @apply bg-yellow-500 font-mono;
+  @apply bg-yellow-500 dark:bg-black text-black dark:text-yellow-500 font-mono;
 }
 
 
@@ -51,7 +45,7 @@ body {
 }
 
 .slide code {
-  @apply text-slate-600 bg-slate-100 rounded px-1 ~text-base/xl;
+  @apply text-slate-600 bg-slate-100 dark:bg-slate-600 dark:text-white rounded px-1 ~text-base/xl;
 }
 
 @keyframes fadeInUpScale {
@@ -109,7 +103,7 @@ figcaption {
 }
 
 baseline-status {
-  @apply w-full border border-slate-400 rounded-2xl bg-gradient-to-t from-slate-100;
+  @apply w-full border border-slate-400 dark:border-slate-600 rounded-2xl bg-gradient-to-t from-slate-100 dark:from-gray-950;
   font-size: 1rem;
   line-height: 1.5;
 }

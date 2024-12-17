@@ -14,7 +14,7 @@ export default function page() {
       <SlidesList slides={slides} />
 
       <div className="p-2">
-        <div className="w-full p-10 bg-yellow-500 border-8 border-black text-center">
+        <div className="w-full p-10 bg-yellow-500 border-8 border-black dark:border-yellow-800 dark:text-black text-center">
           <h2 className="slide-heading leading-none mb-2">isolation: auto <small>(default)</small></h2>
           <p className="w-full max-w-screen-lg mx-auto">Notice how the below elements interact with the bottom right navigation component (which is fixed with a z-index of 30). This is a common issue with fixed headers etc.</p>
           <ul className="mt-8 flex flex-col items-end text-center ~text-lg/3xl font-wide font-normal">
@@ -28,7 +28,7 @@ export default function page() {
       </div>
 
       <div className="p-2">
-        <div className="w-full p-10 bg-yellow-500 border-8 border-black text-center isolate">
+        <div className="w-full p-10 bg-yellow-500 border-8 border-black dark:border-yellow-800 dark:text-black text-center isolate">
           <h2 className="slide-heading leading-none mb-2">isolation: isolate</h2>
           <p className="w-full max-w-screen-lg mx-auto">Instead of whacking a z-[100000] on the fixed component (which then inevitably causes another stacking issue elsewhere), <code>isolation:isolate</code> allows us to confine the stacking context of the below boxes to this particular containing element.</p>
           <ul className="mt-8 flex flex-col items-end text-center ~text-lg/3xl font-wide font-normal">

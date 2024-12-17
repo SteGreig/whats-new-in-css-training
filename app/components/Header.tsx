@@ -18,7 +18,7 @@ const Header = ({
         {leftSubtitle && (
           <span>{leftSubtitle}</span>
         )}
-        <span className="flex-1 h-1 bg-black last:hidden md:last:block"></span>
+        <span className="flex-1 h-1 bg-black dark:bg-yellow-500 last:hidden md:last:block"></span>
         {rightSubtitle && (
           <span>{rightSubtitle}</span>
         )}

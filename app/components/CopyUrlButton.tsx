@@ -31,7 +31,7 @@ export default function CopyUrlButton({ anchor, buttonText = "Copy URL" }: CopyU
   return (
     <button 
       onClick={handleCopy} 
-      className="p-2 w-9 hover:w-auto h-9 transition-all overflow-hidden border-slate-400 hover:border-black border rounded-full focus:outline-none text-sm flex items-center gap-2"
+      className="p-2 w-9 hover:w-auto h-9 transition-all overflow-hidden border-slate-400 hover:border-black dark:hover:border-white border rounded-full focus:outline-none text-sm flex items-center gap-2"
     >
       <IoIosLink className="text-xl flex-none" />
       <span className={`whitespace-nowrap`}>{copied ? "Copied!" : buttonText}</span>
