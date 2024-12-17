@@ -23,6 +23,14 @@ const pages = [
     title: "inset",
     slug: '/inset',
   },
+  {
+    title: "light-dark() Function",
+    slug: '/light-dark-function',
+  },
+  {
+    title: ":has() Pseudo Class",
+    slug: '/has-pseudo-class',
+  },
 ]
 
 export default pages
