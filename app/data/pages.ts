@@ -12,7 +12,7 @@ const pages = [
     slug: '/scroll-behavior-smooth',
   },
   {
-    title: "align-content in Block Layout",
+    title: "align-content in Block Layouts",
     slug: '/align-content-block-layouts',
   },
   {

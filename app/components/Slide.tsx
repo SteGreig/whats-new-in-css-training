@@ -1,3 +1,5 @@
+"use client";
+
 import CopyUrlButton from "./CopyUrlButton";
 
 import { IoIosArrowRoundUp } from "react-icons/io";
@@ -24,7 +26,7 @@ const Slide = ({
           {children}
 
           <nav className="w-full lg:w-auto lg:absolute bottom-0 left-0 flex justify-center pt-8 lg:p-3 gap-2 mt-auto">
-            {id !== 0 ? (
+            {id !== 1 ? (
               <a className="btn border-slate-400 hover:border-black dark:hover:border-white transition border rounded-full w-9 h-9 flex text-black dark:text-white" href={`#slide${id-1}`}><IoIosArrowRoundUp className="m-auto"/></a>
             ) : (
               <button className="btn border-slate-400 border rounded-full w-9 h-9 flex text-black dark:text-white opacity-30" disabled aria-label="No Previous Slide"><IoIosArrowRoundUp className="m-auto"/></button>
