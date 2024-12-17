@@ -7,7 +7,7 @@ export default {
       <div className="flex flex-col gap-5 lg:w-7/12 mx-auto">
         <h2 className="slide-heading">text-wrap: balance</h2>
         <p>This wonderfully simple property will split multi-line text evenly across each line.</p>
-        <p>It eliminates the need to put max-widths on your headlines, or insert br / span tags to control how the text wraps. One of my most used new features!</p>
+        <p>It eliminates the need to put max-widths on your headlines, or insert <code>br</code> / <code>span</code> tags to control how the text wraps. One of my most used new features!</p>
         <BaselineStatus featureId="text-wrap-balance" classes="mt-3" />
       </div>
       <div className="lg:w-5/12">

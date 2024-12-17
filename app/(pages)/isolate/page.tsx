@@ -15,7 +15,7 @@ export default function page() {
 
       <div className="p-2">
         <div className="w-full p-10 bg-yellow-500 border-8 border-black text-center">
-          <h2 className="slide-heading leading-none mb-2">isolation: auto</h2>
+          <h2 className="slide-heading leading-none mb-2">isolation: auto <small>(default)</small></h2>
           <p className="w-full max-w-screen-lg mx-auto">Notice how the below elements interact with the bottom right navigation component (which is fixed with a z-index of 30). This is a common issue with fixed headers etc.</p>
           <ul className="mt-8 flex flex-col items-end text-center ~text-lg/3xl font-wide font-normal">
             <li className="w-11/12 px-6 py-12 bg-orange-200 rounded relative z-10">I have z-index: 10</li>
