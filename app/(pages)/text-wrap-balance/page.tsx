@@ -39,7 +39,7 @@ export default function page() {
 
         <div className="lg:w-1/2">
           <h3 className="text-base mb-1">Tailwind</h3>
-          <CodeBlock code={codeTW} language="css" wrap={true} />
+          <CodeBlock code={codeTW} language="markup" wrap={true} />
         </div>
       </Slide>
     

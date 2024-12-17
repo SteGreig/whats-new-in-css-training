@@ -72,11 +72,11 @@ export default function page() {
         <div className="flex flex-col lg:flex-row w-full gap-8">
           <div className="flex-1">
             <h3 className="text-base mb-1">👎 Tailwind (Longhand)</h3>
-            <CodeBlock code={codeTWLong} language="css" wrap={true} />
+            <CodeBlock code={codeTWLong} language="markup" wrap={true} />
           </div>
           <div className="flex-1">
             <h3 className="text-base mb-1">👍 Tailwind (Shorthand)</h3>
-            <CodeBlock code={codeTWShort} language="css" wrap={true} />
+            <CodeBlock code={codeTWShort} language="markup" wrap={true} />
           </div>
         </div>
       </Slide>

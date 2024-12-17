@@ -28,8 +28,12 @@ const pages = [
     slug: '/light-dark-function',
   },
   {
-    title: ":has() Pseudo Class",
+    title: ":has() Pseudo-class",
     slug: '/has-pseudo-class',
+  },
+  {
+    title: "Container Queries",
+    slug: '/container-queries',
   },
 ]
 

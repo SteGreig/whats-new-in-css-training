@@ -38,6 +38,7 @@ export default {
     },
   },
   plugins: [
-    fluid
+    fluid,
+    require('@tailwindcss/container-queries'),
   ],
 } satisfies Config;

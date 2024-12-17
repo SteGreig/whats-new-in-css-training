@@ -133,6 +133,7 @@ pre.refractor {
 }
 
 
+/* light-dark demos */
 .light-dark-example:has([name="ld-toggle"]:checked) {
   color-scheme: dark;
 }
@@ -142,3 +143,13 @@ pre.refractor {
   color: light-dark(#000, #fff);
   border: 10px solid light-dark(#dacebd, #969fb5);
 }
+
+
+/* :has demos */
+.has-demo2-tab {
+  @apply hidden;
+}
+
+.has-demo2:has(.tab-1:checked) .has-demo2-tab-1 { @apply block; }
+.has-demo2:has(.tab-2:checked) .has-demo2-tab-2 { @apply block; }
+.has-demo2:has(.tab-3:checked) .has-demo2-tab-3 { @apply block; }

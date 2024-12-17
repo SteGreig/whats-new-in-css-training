@@ -19,7 +19,7 @@ const Slide = ({
   isLast?: boolean;
 }>) => {
   return (
-    <div id={`slide${id}`} className="slide-wrap bg-gradient-to-tl from-white/20 dark:from-gray-950/30">
+    <div id={`slide${id}`} className="slide-wrap bg-gradient-to-t from-white/10 dark:from-gray-950/30">
       <section className={`slide w-full ~p-4/20 min-h-screen sticky top-0 z-10 flex items-center ${wrapperClasses}`}>
         <div className={`relative min-h-[600px] bg-white dark:bg-gray-900 dark:text-white rounded-3xl w-full max-w-screen-2xl mx-auto ~px-6/24 ~py-8/24 shadow-2xl shadow-yellow-700 dark:shadow-none content-center font-semibold ~text-base/2xl ${boxClasses}`}>
           

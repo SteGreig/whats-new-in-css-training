@@ -28,7 +28,7 @@ export default function page() {
           <h3 className="text-base mb-1">Standard CSS</h3>
           <CodeBlock code={codeCSS} language="css" />
           <h3 className="text-base mb-1 mt-8">Tailwind</h3>
-          <CodeBlock code={codeTW} language="css" wrap={true} />
+          <CodeBlock code={codeTW} language="markup" wrap={true} />
         </div>
       </Slide>
 
