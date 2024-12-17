@@ -15,7 +15,7 @@ const BaselineStatus: React.FC<BaselineStatusProps> = ({ featureId, classes }) =
   // Render using dangerouslySetInnerHTML to avoid JSX conflicts
   return (
     <div
-      className={`${classes}`}
+      className={`${classes} min-h-[104px]`}
       dangerouslySetInnerHTML={{
         __html: `<baseline-status featureId="${featureId}"></baseline-status>`,
       }}

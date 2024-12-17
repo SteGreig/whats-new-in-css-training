@@ -23,6 +23,9 @@ body {
   @apply bg-yellow-500 dark:bg-black text-black dark:text-yellow-500 font-mono;
 }
 
+body:has(.slideout-open) {
+  @apply overflow-hidden;
+}
 
 ::selection {
   @apply bg-black text-white;
@@ -50,7 +53,7 @@ body {
 
 @keyframes fadeInUpScale {
   from {
-    transform: scale(0.3);
+    transform: scale(0.3) rotate(10deg);
     filter: grayscale(1);
   }
   to {
@@ -106,6 +109,18 @@ baseline-status {
   @apply w-full border border-slate-400 dark:border-slate-600 rounded-2xl bg-gradient-to-t from-slate-100 dark:from-gray-950;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+baseline-status:has(baseline-icon[support="newly"]) {
+  @apply from-blue-300;
+}
+
+baseline-icon {
+  display: none;
+}
+
+.name {
+  display: none !important;
 }
 
 .wrap-text.wrap-text pre code {

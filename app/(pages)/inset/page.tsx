@@ -61,21 +61,21 @@ export default function page() {
         </div>
         <div className="flex flex-col lg:flex-row w-full gap-8">
           <div className="flex-1">
-            <h3 className="text-base mb-1">Standard CSS (Longhand)</h3>
+            <h3 className="text-base mb-1">👎 Standard CSS (Longhand)</h3>
             <CodeBlock code={codeCSSLong} language="css" />
           </div>
           <div className="flex-1">
-            <h3 className="text-base mb-1">Standard CSS (Shorthand)</h3>
+            <h3 className="text-base mb-1">👍 Standard CSS (Shorthand)</h3>
             <CodeBlock code={codeCSSShort} language="css" />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row w-full gap-8">
           <div className="flex-1">
-            <h3 className="text-base mb-1">Tailwind (Longhand)</h3>
+            <h3 className="text-base mb-1">👎 Tailwind (Longhand)</h3>
             <CodeBlock code={codeTWLong} language="css" wrap={true} />
           </div>
           <div className="flex-1">
-            <h3 className="text-base mb-1">Tailwind (Shorthand)</h3>
+            <h3 className="text-base mb-1">👍 Tailwind (Shorthand)</h3>
             <CodeBlock code={codeTWShort} language="css" wrap={true} />
           </div>
         </div>
