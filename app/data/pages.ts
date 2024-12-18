@@ -47,6 +47,10 @@ const pages = [
     title: "View Transitions",
     slug: '/view-transitions',
   },
+  {
+    title: "clamp()",
+    slug: '/clamp',
+  },
 ]
 
 export default pages

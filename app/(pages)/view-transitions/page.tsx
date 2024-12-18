@@ -92,6 +92,7 @@ export default function page() {
         <div className="w-full">
           <CodeBlock code={codeCSS5} language="css" />
         </div>
+        <p><a href="https://developer.chrome.com/docs/web-platform/view-transitions">Read more about the View Transitions API</a></p>
       </Slide>
     
     </DefaultTemplate>
