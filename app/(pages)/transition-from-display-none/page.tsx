@@ -29,7 +29,7 @@ export default function page() {
   return (
     <DefaultTemplate
       title="Transition from display: none"
-      prevSlug="/transition-auto"
+      prevSlug="/transition-to-auto"
       nextSlug="/view-transitions"
     >
     
