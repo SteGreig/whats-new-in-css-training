@@ -70,7 +70,7 @@ export default function page() {
         </div>
       </Slide>
 
-      <Slide id={2} boxClasses="content-start">
+      <Slide id={2} isLast={true} boxClasses="content-start">
         <div className="flex flex-col lg:flex-row justify-center ~gap-8/20 mb-8">
           <div className="flex flex-col gap-5 lg:w-7/12 mr-auto">
             <h2 className="slide-heading">Cards Example</h2>

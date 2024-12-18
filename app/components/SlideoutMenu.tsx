@@ -38,7 +38,7 @@ const SlideoutMenu = () => {
               <li key={i}>
                 <Link
                   onClick={toggleMenu}
-                  className="~text-lg/2xl ~py-2/3 flex gap-2 items-center group leading-none transition-all duration-300 menu-item"
+                  className="~text-lg/xl ~py-2/3 flex gap-2 items-center group leading-none transition-all duration-300 menu-item"
                   href={`${page.slug}`}
                 >
                   <span>{page.title}</span>

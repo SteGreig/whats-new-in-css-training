@@ -1,6 +1,6 @@
 const pages = [
   {
-    title: "Evolution of CSS",
+    title: "The CSS Backstory",
     slug: '/',
   },
   {
@@ -34,6 +34,10 @@ const pages = [
   {
     title: "Container Queries",
     slug: '/container-queries',
+  },
+  {
+    title: "Transition to auto",
+    slug: '/transition-to-auto',
   },
 ]
 
