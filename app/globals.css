@@ -67,7 +67,10 @@ body:has(.slideout-open) {
 }
 
 .slide {
-  animation: fadeInUpScale linear;
+  @media screen and (min-width: 1024px) {
+    animation: fadeInUpScale linear;
+  }
+
   animation-timeline: view();
   animation-range: 0 98vh;
   transform-origin: top;
@@ -164,6 +167,7 @@ pre.refractor {
 }
 
 
+
 /* light-dark demos */
 .light-dark-example:has([name="ld-toggle"]:checked) {
   color-scheme: dark;
@@ -253,3 +257,5 @@ pre.refractor {
   animation-timeline: view();
   animation-range: 200px 600px;
 }
+
+

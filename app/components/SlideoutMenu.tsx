@@ -6,6 +6,7 @@ import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { HiBars3BottomLeft } from "react-icons/hi2";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const SlideoutMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +48,7 @@ const SlideoutMenu = () => {
               </li>
             ))}
           </ul>
+          <ThemeSwitcher classes="flex gap-2 mt-8 mb-20 pl-1" />
         </nav>
       </div>
 

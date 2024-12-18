@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Providers from "./providers";
 import localFont from "next/font/local";
 import "./globals.css";
 
 import SlideoutMenu from "./components/SlideoutMenu";
+import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
 const chaneyReg = localFont({
   src: "./fonts/CHANEY-Regular.otf",
@@ -45,17 +47,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="">
+    <html lang="en" className="" suppressHydrationWarning={true}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${chaneyReg.variable} ${chaneyWide.variable} ${chaneyUltraExt.variable} antialiased`}
       >
-        {children}
+        <Providers>
+        
+          {children}
 
-        <SlideoutMenu />
+          <SlideoutMenu />
 
-        <footer className="my-20 lg:my-6 flex justify-center">
-          <p>Made by <a className="underline hover:bg-black hover:text-white transition" href="https://ste.digital/">Ste Greig</a></p>
-        </footer>
+          <footer className="my-20 lg:my-6 flex justify-center">
+            <p>Made by <a className="underline hover:bg-black hover:text-white transition" href="https://ste.digital/">Ste Greig</a></p>
+          </footer>
+
+          <ThemeSwitcher classes="fixed bottom-20 left-2 flex-col gap-2 hidden lg:flex" />
+        </Providers>
       </body>
     </html>
   );
