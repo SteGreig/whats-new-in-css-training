@@ -2,6 +2,9 @@ import DefaultTemplate from "../../components/DefaultTemplate"
 import BaselineStatus from "@/app/components/BaselineStatus";
 import CodeBlock from "@/app/components/CodeBlock";
 import Slide from "@/app/components/Slide";
+import Image from "next/image";
+
+import clampCalc from '/public/clamp-calculator.jpg'
 
 const codeCSS = `h1 {
   font-size: clamp(1.25rem, 4vw, 3.75rem);
@@ -39,7 +42,7 @@ export default function page() {
     <DefaultTemplate
       title="clamp()"
       prevSlug="/view-transitions"
-      nextSlug="/scroll-driven-animation"
+      nextSlug="/scroll-driven-animations"
     >
     
       <Slide id={1} boxClasses="flex flex-col lg:flex-row justify-center ~gap-8/20" wrapperClasses="overflow-hidden">
@@ -83,6 +86,12 @@ export default function page() {
         <h2 className="slide-heading">The Magic "preferred" value</h2>
         <p>Deciding what to use for the middle 'ideal' value in the <code>clamp()</code> can feel a bit arbitrary, but there is a mathematically ideal number that will ensure the smoothest scaling between your min and max values.</p>
         <p>It's far too complex to do manually, but there are many <a href="https://clamp.font-size.app/">calculators</a> that will work this out for you.</p>
+        <Image
+            src={clampCalc}
+            alt="A clamp calculator screenshot"
+            width={650}
+            height={375}
+          />
         <div className="flex-1 rounded-xl bg-blue-100 relative text-center content-center ~py-6/12 ~px-3/6">
           <p className="font-primary font-normal text-[clamp(1.5rem,+0.9706rem_+_2.2588vw,4.5rem)] leading-snug">Lorem ipsum dolor sit</p>
         </div>

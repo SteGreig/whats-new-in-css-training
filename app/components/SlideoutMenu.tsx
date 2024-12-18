@@ -26,7 +26,7 @@ const SlideoutMenu = () => {
 
       {/* Off-canvas menu */}
       <div
-        className={`${isOpen ? "slideout-open shadow-2xl translate-x-0" : "-translate-x-full"} fixed top-0 left-0 h-screen w-full max-w-screen-xs bg-yellow-500 dark:bg-gray-900 z-50 transition duration-300 ~p-8/14`}
+        className={`${isOpen ? "slideout-open shadow-2xl translate-x-0" : "-translate-x-full"} fixed top-0 left-0 h-screen w-full max-w-screen-sm bg-yellow-500 dark:bg-gray-900 z-50 transition duration-300 ~p-8/14`}
       >
         <div className="flex items-center mb-4 gap-4">
           <p className="font-primary font-normal text-xl">Menu</p>

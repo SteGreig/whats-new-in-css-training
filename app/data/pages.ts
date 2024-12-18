@@ -51,6 +51,10 @@ const pages = [
     title: "clamp()",
     slug: '/clamp',
   },
+  {
+    title: "Scroll Driven Animations",
+    slug: '/scroll-driven-animations',
+  },
 ]
 
 export default pages

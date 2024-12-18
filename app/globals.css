@@ -207,3 +207,19 @@ pre.refractor {
     translate: 0 100vh;
   }
 }
+
+
+
+/* Scroll demos */
+.scroll-indicator {
+  transform: scaleX(0);
+  animation: scaleXFull;
+  animation-timeline: scroll();
+  transform-origin: left;
+}
+
+@keyframes scaleXFull {
+  to {
+    transform: scaleX(1);
+  }
+}
