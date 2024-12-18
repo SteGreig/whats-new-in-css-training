@@ -15,7 +15,11 @@
   navigation: auto;
 }
 
-/* @keyframes fade-in {
+/* ::view-transition-group(root) {
+  animation-duration: 1s;
+} */
+
+@keyframes fade-in {
   from { opacity: 0; }
 }
 
@@ -32,14 +36,14 @@
 }
 
 ::view-transition-old(root) {
-  animation: 1s cubic-bezier(0.4, 0, 1, 1) both fade-out,
-    1s cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+  animation: 1s fade-out,
+    1s slide-to-left;
 }
 
 ::view-transition-new(root) {
-  animation: 1s cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
-    1s cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
-} */
+  animation: 1s fade-in,
+    1s slide-from-right;
+}
 
 html {
   scroll-behavior: smooth;
