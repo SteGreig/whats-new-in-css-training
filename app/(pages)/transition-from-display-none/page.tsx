@@ -53,14 +53,14 @@ export default function page() {
 
           <p className="mt-4">The below shows how the <code>transition-behavior: allow-discrete</code> rule works.</p>
           
-          <div className="~p-4/8 rounded-2xl bg-indigo-50 mt-10">
+          <div className="~p-4/8 rounded-2xl bg-indigo-50 dark:bg-gray-800 mt-10">
             <h3 className="font-primary font-normal text-center mb-6">Going from display none to block</h3>
             <div className="flex w-full mb-2 gap-2 text-center">
-              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 rounded-xl">Snap change from none to block</p>
+              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 dark:bg-gray-700 rounded-xl">Snap change from none to block</p>
             </div>
             <div className="flex justify-between w-full mb-2 gap-2 text-center">
-              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 rounded-xl">@starting-style styles</p>
-              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 rounded-xl content-center">active styles</p>
+              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 dark:bg-gray-700 rounded-xl">@starting-style styles</p>
+              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 dark:bg-gray-700 rounded-xl content-center">active styles</p>
             </div>
             <div className="flex flex-1 mx-8 pt-1 border-t border-black">
               <span>0%</span>
@@ -69,14 +69,14 @@ export default function page() {
             </div>
           </div>
 
-          <div className="~p-4/8 rounded-2xl bg-indigo-50 mt-8">
+          <div className="~p-4/8 rounded-2xl bg-indigo-50 dark:bg-gray-800 mt-8">
             <h3 className="font-primary font-normal text-center mb-6">Going from display block to none</h3>
             <div className="flex justify-end w-full mb-2 gap-2 text-center">
-              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 rounded-xl">Snap change from block to none</p>
+              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 dark:bg-gray-700 rounded-xl">Snap change from block to none</p>
             </div>
             <div className="flex justify-between w-full mb-2 gap-2 text-center">
-              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 rounded-xl content-center">active styles</p>
-              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 rounded-xl content-center">non-active styles</p>
+              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 dark:bg-gray-700 rounded-xl content-center">active styles</p>
+              <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 dark:bg-gray-700 rounded-xl content-center">non-active styles</p>
             </div>
             <div className="flex flex-1 mx-8 pt-1 border-t border-black">
               <span>0%</span>

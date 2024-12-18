@@ -38,6 +38,11 @@
  pre[class*="language-"] {
    background: light-dark(#0d121d, #000);
  }
+
+.refractor ::selection {
+  background-color: #fff !important;
+  color: #000 !important;
+ }
  
  /* Inline code */
  :not(pre) > code[class*="language-"] {

@@ -79,7 +79,7 @@ export default function page() {
                 <Card /><Card /><Card />
                 <Card /><Card /><Card />
               </div>
-              <label className="absolute -bottom-6 has-[:checked]:-bottom-16 transition-all left-1/2 -translate-x-1/2 whitespace-nowrap bg-indigo-200 hover:bg-indigo-300 rounded-full px-4 py-2 cursor-pointer" htmlFor="auto-demo">Show More <input className="invisible absolute" type="checkbox" id="auto-demo" /></label>
+              <label className="absolute -bottom-6 has-[:checked]:-bottom-16 transition-all left-1/2 -translate-x-1/2 whitespace-nowrap bg-indigo-200 hover:bg-indigo-300 rounded-full px-4 py-2 cursor-pointer dark:text-indigo-900" htmlFor="auto-demo">Show More <input className="invisible absolute" type="checkbox" id="auto-demo" /></label>
             </div>
           </div>
         </div>

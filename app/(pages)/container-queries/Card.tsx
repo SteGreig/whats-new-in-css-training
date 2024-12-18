@@ -2,7 +2,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Card = () => {
   return (
-    <div className="@container">
+    <div className="@container dark:text-black">
       <div className="card rounded-2xl bg-indigo-100 font-sans">
         <img className="rounded-2xl w-full" src="https://picsum.photos/seed/picsum/600/300" alt="Random demo image from picsum CDN" />
         <div className="p-3 @xs:p-5 @lg:p-7">

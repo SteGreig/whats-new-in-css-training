@@ -65,7 +65,7 @@ export default function page() {
         <h2 className="slide-heading">The Benefits</h2>
         <p>If you resize your browser, here we see the difference between using <code>clamp()</code> and simply using a <code>vw</code> value for the font-size. Without <code>clamp()</code> the text gets too small on small screens and too big on wider screens! The text also loses the ability to resize if someone uses the zoom controls in their browser.</p>
         <div className="flex flex-col lg:flex-row ~gap-4/8">
-          <div className="flex-1 rounded-xl bg-blue-100 relative text-center content-center ~py-6/12 ~px-3/6">
+          <div className="flex-1 rounded-xl bg-blue-100 dark:bg-slate-800 relative text-center content-center ~py-6/12 ~px-3/6">
             <p className="font-primary font-normal text-[clamp(16px,2vw,36px)] leading-snug">Lorem ipsum dolor sit</p>
           </div>
           <div className="flex-1">
@@ -73,7 +73,7 @@ export default function page() {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row ~gap-4/8">
-          <div className="flex-1 rounded-xl bg-blue-100 relative text-center content-center ~py-6/12 ~px-3/6">
+          <div className="flex-1 rounded-xl bg-blue-100 dark:bg-slate-800 relative text-center content-center ~py-6/12 ~px-3/6">
             <p className="font-primary font-normal text-[2vw] leading-snug">Lorem ipsum dolor sit</p>
           </div>
           <div className="flex-1">
@@ -92,7 +92,7 @@ export default function page() {
             width={650}
             height={375}
           />
-        <div className="flex-1 rounded-xl bg-blue-100 relative text-center content-center ~py-6/12 ~px-3/6">
+        <div className="flex-1 rounded-xl bg-blue-100 dark:bg-slate-800 relative text-center content-center ~py-6/12 ~px-3/6">
           <p className="font-primary font-normal text-[clamp(1.5rem,+0.9706rem_+_2.2588vw,4.5rem)] leading-snug">Lorem ipsum dolor sit</p>
         </div>
         <div className="flex-1">
@@ -106,8 +106,8 @@ export default function page() {
         <h2 className="slide-heading">clamp() in Tailwind via fluid.tw</h2>
         <p>With the <a href="https://fluid.tw/">fluid.tw</a> plugin, instead of adjusting your sizing/spacing values at different breakpoints like this...</p>
         <div className="flex flex-col lg:flex-row ~gap-4/8">
-          <div className="lg:w-1/2 rounded-xl bg-blue-100 p-4 lg:p-8 xl:p-12 content-center">
-            <p className="font-primary font-normal text-base md:text-xl xl:text-3xl bg-blue-200 rounded-lg">Lorem ipsum dolor sit</p>
+          <div className="lg:w-1/2 rounded-xl bg-blue-100 dark:bg-slate-800 p-4 lg:p-8 xl:p-12 content-center">
+            <p className="font-primary font-normal text-base md:text-xl xl:text-3xl bg-blue-200 dark:bg-gray-900 rounded-lg">Lorem ipsum dolor sit</p>
           </div>
           <div className="lg:w-1/2">
             <CodeBlock code={codeFour} language="css" />
@@ -115,8 +115,8 @@ export default function page() {
         </div>
         <p>...you can just define a minimum value and a maximum value and it will scale smoothly in between...</p>
         <div className="flex flex-col lg:flex-row ~gap-4/8">
-          <div className="lg:w-1/2 rounded-xl bg-blue-100 ~p-4/12 content-center">
-            <p className="font-primary font-normal ~text-base/3xl bg-blue-200 rounded-lg">Lorem ipsum dolor sit</p>
+          <div className="lg:w-1/2 rounded-xl bg-blue-100 dark:bg-slate-800 ~p-4/12 content-center">
+            <p className="font-primary font-normal ~text-base/3xl bg-blue-200 dark:bg-gray-900 rounded-lg">Lorem ipsum dolor sit</p>
           </div>
           <div className="lg:w-1/2">
             <CodeBlock code={codeFive} language="css" />

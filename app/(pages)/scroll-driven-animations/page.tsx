@@ -118,7 +118,7 @@ export default function page() {
         </div>
       </Slide>
 
-      <section id="slide6" className="w-full h-screen anim-view-demo bg-blue-300 content-center text-center after:bg-gradient-to-br after:from-black/20 after:z-[-1] after:absolute after:inset-0 relative">
+      <section id="slide6" className="w-full h-screen anim-view-demo bg-blue-300 content-center text-center after:bg-gradient-to-br after:from-black/20 after:z-[-1] after:absolute after:inset-0 relative text-black">
         <p className="m-auto w-full max-w-96 text-4xl mb-4">I start animating as soon as my first pixel is visible, and I don't finish until my last pixel has disappeared out of view!</p>
         (<code>animation-range: cover</code>)
       </section>
@@ -131,12 +131,12 @@ export default function page() {
         </div>
       </Slide>
 
-      <section id="slide8" className="w-full h-screen anim-view-demo2 bg-blue-300 content-center text-center after:bg-gradient-to-br after:from-black/20 after:z-[-1] after:absolute after:inset-0 relative">
+      <section id="slide8" className="w-full h-screen anim-view-demo2 bg-blue-300 content-center text-center after:bg-gradient-to-br after:from-black/20 after:z-[-1] after:absolute after:inset-0 relative text-black">
         <p className="m-auto w-full max-w-96 text-4xl mb-4">I start animating as soon as my first pixel is visible, and I finish as soon as I hit the top of the screen!</p>
         (<code>animation-range: 0 100vh</code>)
       </section>
 
-      <section id="slide9" className="w-full h-screen anim-view-demo3 bg-blue-300 content-center text-center after:bg-gradient-to-br after:from-black/20 after:z-[-1] after:absolute after:inset-0 relative">
+      <section id="slide9" className="w-full h-screen anim-view-demo3 bg-blue-300 content-center text-center after:bg-gradient-to-br after:from-black/20 after:z-[-1] after:absolute after:inset-0 relative text-black">
         <p className="m-auto w-full max-w-96 text-4xl mb-4">I start animating when 200px of me is visible, and I finish when 800px of me is visible</p>
         (<code>animation-range: 200px 800px</code>)
       </section>

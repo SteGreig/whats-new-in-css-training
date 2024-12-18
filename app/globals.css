@@ -58,7 +58,8 @@ body:has(.slideout-open) {
 }
 
 ::selection {
-  @apply bg-black text-white;
+  background-color: light-dark(#000, #fff);
+  color: light-dark(#fff, #000);
 }
 
 .slide-wrap {
@@ -68,7 +69,7 @@ body:has(.slideout-open) {
 .slide {
   animation: fadeInUpScale linear;
   animation-timeline: view();
-  animation-range: 0 100vh;
+  animation-range: 0 98vh;
   transform-origin: top;
   backface-visibility: hidden;
 }
@@ -96,10 +97,10 @@ body:has(.slideout-open) {
 header {
   animation: blur linear forwards;
   animation-timeline: scroll();
+  animation-range: 0 800px;
 }
 
 @keyframes blur {
-  40% { filter: blur(20px); opacity: 0; }
   100% { filter: blur(20px); opacity: 0; }
 }
 

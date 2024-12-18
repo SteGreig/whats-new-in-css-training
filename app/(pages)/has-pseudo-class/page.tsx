@@ -70,15 +70,15 @@ export default function page() {
             <h2 className="slide-heading">Selecting Containers</h2>
             <p>The most obvious use case for <code>:has()</code> is of course targeting an element's container.</p>
             <form className="flex flex-col gap-2 mt-4 border border-indigo-50 rounded-lg p-6">
-              <label className="rounded-lg hover:bg-gray-100 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-white has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
+              <label className="rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-white has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
                 <span>Option One</span>
                 <input type="radio" name="has-demo" defaultChecked />
               </label>
-              <label className="rounded-lg hover:bg-gray-100 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-white has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
+              <label className="rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-white has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
                 <span>Option Two</span>
                 <input type="radio" name="has-demo" />
               </label>
-              <label className="rounded-lg hover:bg-gray-100 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-white has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
+              <label className="rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-white has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
                 <span>Option Three</span>
                 <input type="radio" name="has-demo" />
               </label>
@@ -102,7 +102,7 @@ export default function page() {
           <div className="flex flex-col gap-5 lg:w-7/12 mx-auto">
             <h2 className="slide-heading">Selecting Previous Sibling</h2>
             <p>We've been able to select adjacent siblings that <em>follow</em> an element for a long time now with the <code>+</code> and <code>~</code> combinators, but we can now use these to select adjacent siblings that come <em>before</em> an element!</p>
-            <div className="flex flex-col gap-2 mt-4 bg-indigo-50 rounded-lg p-6 font-sans text-base">
+            <div className="flex flex-col gap-2 mt-4 bg-indigo-50 rounded-lg p-6 font-sans text-base dark:text-black">
               <p className="has-[+img]:font-bold">We can now easily select elements that come BEFORE another element!</p>
               <img className="rounded-lg" src="https://picsum.photos/seed/picsum/600/215" alt="Random demo image from picsum CDN" />
               <p className="">(And we can still easily select elements that come after too of course!)</p>
@@ -146,15 +146,15 @@ export default function page() {
         <div className="flex flex-col lg:flex-row justify-center ~gap-8/20">
           <div className="flex-1 has-demo2 mt-4 border border-indigo-200 rounded-lg p-6">
             <form className="flex gap-2">
-              <label className="cursor-pointer rounded-lg hover:bg-gray-100 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-gray-200 has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
+              <label className="cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-gray-200 has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
                 <span>Tab One</span>
                 <input type="radio" name="has-demo2" className="tab-1 invisible absolute" defaultChecked />
               </label>
-              <label className="cursor-pointer rounded-lg hover:bg-gray-100 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-gray-200 has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
+              <label className="cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-gray-200 has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
                 <span>Tab Two</span>
                 <input type="radio" name="has-demo2" className="tab-2 invisible absolute" />
               </label>
-              <label className="cursor-pointer rounded-lg hover:bg-gray-100 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-gray-200 has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
+              <label className="cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 has-[:checked]:text-indigo-800 has-[:checked]:hover:bg-indigo-50 has-[:checked]:bg-indigo-50 border border-gray-200 has-[:checked]:border-indigo-200 font-sans p-4 text-base flex justify-between items-center">
                 <span>Tab Three</span>
                 <input type="radio" name="has-demo2" className="tab-3 invisible absolute" />
               </label>
