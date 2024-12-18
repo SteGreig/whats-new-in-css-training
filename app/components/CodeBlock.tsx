@@ -17,12 +17,12 @@ registerLanguage(markup)
 interface CodeBlockProps {
   code: string;
   language: string; // "css", "html", etc.
-  highlightedLines?: number[]; // Lines to highlight
+  //highlightedLines?: number[]; // Lines to highlight
   wrap?: boolean;
   classes?: string;
 }
 
-const CodeBlock: React.FC<CodeBlockProps> = ({ code, language, highlightedLines = [], wrap, classes }) => {
+const CodeBlock: React.FC<CodeBlockProps> = ({ code, language, wrap, classes }) => {
   return (
     <div className={`text-base ${classes} ${wrap && 'wrap-text'}`}>
       <Refractor language={language} value={code} />

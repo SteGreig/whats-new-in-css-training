@@ -1,5 +1,4 @@
 import DefaultTemplate from "../../components/DefaultTemplate"
-import BaselineStatus from "@/app/components/BaselineStatus";
 import CodeBlock from "@/app/components/CodeBlock";
 import Slide from "@/app/components/Slide";
 
