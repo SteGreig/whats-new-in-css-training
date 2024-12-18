@@ -90,7 +90,7 @@ export default function page() {
           <div className="lg:w-7/12">
             <h3 className="text-base mb-1">Tailwind</h3>
             <CodeBlock code={codeTW2} language="markup" />
-            <p className="mt-6">I do quite like the Tailwind implementation of container queries. You simply use <code>@container</code> to define your context, and then <code>@xs:</code>, <code>@sm:</code> etc. instead of the usual viewport prefixes. Bear in mind though that the sizes are different - the default sizes can be found in the <a href="https://github.com/tailwindlabs/tailwindcss-container-queries">repo readme</a>.</p>
+            <p className="mt-6">I do quite like the Tailwind implementation of container queries. You simply use <code>@container</code> to define your context, and then <code>@xs:</code>, <code>@sm:</code> etc. instead of the usual viewport prefixes. Bear in mind though that the sizes are different - the default sizes can be found in the plugin <a href="https://github.com/tailwindlabs/tailwindcss-container-queries">repo readme</a>.</p>
           </div>
           <div className="lg:w-5/12">
             <h3 className="text-base mb-1">Standard CSS</h3>

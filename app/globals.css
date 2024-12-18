@@ -212,14 +212,43 @@ pre.refractor {
 
 /* Scroll demos */
 .scroll-indicator {
-  transform: scaleX(0);
   animation: scaleXFull;
   animation-timeline: scroll();
   transform-origin: left;
 }
 
 @keyframes scaleXFull {
+  from {
+    transform: scaleX(0);
+  }
   to {
     transform: scaleX(1);
   }
+}
+
+@keyframes colorChange {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: rebeccapurple;
+  }
+}
+
+
+.anim-view-demo {
+  animation: colorChange, scaleXFull;
+  animation-timeline: view();
+}
+
+.anim-view-demo2 {
+  animation: colorChange, scaleXFull;
+  animation-timeline: view();
+  animation-range: 0 100vh;
+}
+
+.anim-view-demo3 {
+  animation: colorChange, scaleXFull;
+  animation-timeline: view();
+  animation-range: 200px 600px;
 }
