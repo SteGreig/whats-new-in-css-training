@@ -75,10 +75,7 @@ export default function page() {
 
       <Slide id={3} isLast={true} boxClasses="content-start gap-8 flex flex-col light-dark-example">
         <h2 className="slide-heading">Try it out</h2>
-        <div className="flex gap-2">
-          <input id="ld-toggle" type="checkbox" name="ld-toggle" />
-          <label htmlFor="ld-toggle" className="text-base cursor-pointer">Toggle Light/Dark Mode</label>
-        </div>
+        <p>Use the light/dark mode toggle to switch theme and see how these rules take effect.</p>
         <div className="flex flex-col lg:flex-row ~gap-4/8">
           <div className="example flex-1 rounded-xl relative ~text-xl/3xl font-primary font-normal text-center content-center">
             <p>Hello</p>
