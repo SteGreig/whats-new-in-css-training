@@ -119,7 +119,7 @@ export default function page() {
         </div>
       </Slide>
 
-      <Slide id={3}>
+      <Slide id={4}>
         <div className="flex flex-col lg:flex-row justify-center ~gap-8/20">
           <div className="flex flex-col gap-5 lg:w-7/12 mx-auto">
             <h2 className="slide-heading">Global Conditional Targeting</h2>
@@ -136,7 +136,7 @@ export default function page() {
         </div>
       </Slide>
 
-      <Slide id={4} isLast={true} boxClasses="content-start">
+      <Slide id={5} isLast={true} boxClasses="content-start">
         <div className="flex flex-col lg:flex-row justify-center ~gap-8/20 mb-8">
           <div className="flex flex-col gap-5 lg:w-7/12 mr-auto">
             <h2 className="slide-heading">The scope is huge!</h2>

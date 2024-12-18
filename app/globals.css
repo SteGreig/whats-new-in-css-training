@@ -153,3 +153,27 @@ pre.refractor {
 .has-demo2:has(.tab-1:checked) .has-demo2-tab-1 { @apply block; }
 .has-demo2:has(.tab-2:checked) .has-demo2-tab-2 { @apply block; }
 .has-demo2:has(.tab-3:checked) .has-demo2-tab-3 { @apply block; }
+
+
+/* Starting Style */
+
+/* ACTIVE STATE */
+.modal-ss-demo.starting-style.active {
+  translate: 0 0;
+  display: flex;
+}
+
+/* EXIT END STATE */
+.modal-ss-demo {
+  transition: 0.7s;
+  transition-behavior: allow-discrete;
+  translate: 0 -100vh;
+  display: none;
+}
+
+/* ENTRY START STATE   */
+@starting-style {
+  .modal-ss-demo.starting-style.active {
+    translate: 0 100vh;
+  }
+}

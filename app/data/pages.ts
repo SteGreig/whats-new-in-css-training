@@ -39,6 +39,10 @@ const pages = [
     title: "Transition to auto",
     slug: '/transition-to-auto',
   },
+  {
+    title: "Transition from display: none",
+    slug: '/transition-from-display-none',
+  },
 ]
 
 export default pages
