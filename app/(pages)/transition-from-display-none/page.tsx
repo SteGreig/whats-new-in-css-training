@@ -62,7 +62,7 @@ export default function page() {
               <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 dark:bg-gray-700 rounded-xl">@starting-style styles</p>
               <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 dark:bg-gray-700 rounded-xl content-center">active styles</p>
             </div>
-            <div className="flex flex-1 mx-8 pt-1 border-t border-black">
+            <div className="flex flex-1 mx-8 pt-1 border-t border-black dark:border-white">
               <span>0%</span>
               <span className="flex-1 text-center">the animation</span>
               <span>100%</span>
@@ -78,7 +78,7 @@ export default function page() {
               <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 dark:bg-gray-700 rounded-xl content-center">active styles</p>
               <p className="~text-xs/base ~w-28/48 p-2 bg-indigo-100 dark:bg-gray-700 rounded-xl content-center">non-active styles</p>
             </div>
-            <div className="flex flex-1 mx-8 pt-1 border-t border-black">
+            <div className="flex flex-1 mx-8 pt-1 border-t border-black dark:border-white">
               <span>0%</span>
               <span className="flex-1 text-center">the animation</span>
               <span>100%</span>
