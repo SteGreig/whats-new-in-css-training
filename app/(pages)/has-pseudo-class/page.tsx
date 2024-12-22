@@ -33,13 +33,17 @@ const codeTW3 = `/* Target p after an img */
 const codeTW4 = `/* Target p before an img */
 <p class="has-[+img]:font-bold"></p>`;
 
-const codeCSS6 = `body:has(.slideout-menu-active) {
+const codeCSS6 = `body:has(.sidebar) .any-element-on-page {
+  /* styles */
+}`;
+
+const codeCSS7 = `body:has(.slideout-menu-active) {
   overflow: hidden;
 }`;
 
 const codeTW5 = `<body class="has-[.slideout-menu-active]:overflow-hidden">`;
 
-const codeCSS7 = `.tabs:has(.tab1:checked) .tab-panel1,
+const codeCSS8 = `.tabs:has(.tab1:checked) .tab-panel1,
 .tabs:has(.tab2:checked) .tab-panel2,
 .tabs:has(.tab3:checked) .tab-panel3 {
   display: block;
@@ -123,13 +127,15 @@ export default function page() {
         <div className="flex flex-col lg:flex-row justify-center ~gap-8/20">
           <div className="flex flex-col gap-5 lg:w-7/12 mx-auto">
             <h2 className="slide-heading">Global Conditional Targeting</h2>
-            <p>The <code>:has</code> pseudo-class isn't limited to direct children - you can use it as high up the tree as you want, to the extent that we can use it as a kind of global selector that's based on certain conditions.</p>
-            <p>For example, a common use-case for me is to disable overflow on the <code>body</code> tag if there is a modal or off-canvas menu currently active.</p>
+            <p>The <code>:has</code> pseudo-class isn't limited to direct children - you can use it as high up the tree as you want, to the extent that we can use it as a kind of global detector to style something based on the existence or state of something else.</p>
+            <p>Another common use-case for me is to disable overflow on the <code>body</code> tag if there is a modal or off-canvas menu currently active.</p>
             <p>Go ahead and click the menu button in the bottom left of this page, and you will see the body can no longer be scrolled - without any JavaScript!</p>
           </div>
           <div className="lg:w-5/12">
-            <h3 className="text-base mb-1">Standard CSS</h3>
             <CodeBlock code={codeCSS6} language="css" />
+            <hr className="my-6 border-black dark:border-white opacity-30" />
+            <h3 className="text-base mb-1">Standard CSS</h3>
+            <CodeBlock code={codeCSS7} language="css" />
             <h3 className="text-base mb-1 mt-8">Tailwind</h3>
             <CodeBlock code={codeTW5} language="markup" wrap={true} />
           </div>
@@ -165,7 +171,7 @@ export default function page() {
           </div>
           <div className="flex-1">
             <h3 className="text-base mb-1">Standard CSS</h3>
-            <CodeBlock code={codeCSS7} language="css" />
+            <CodeBlock code={codeCSS8} language="css" />
           </div>
         </div>
       </Slide>
