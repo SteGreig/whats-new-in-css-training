@@ -140,7 +140,7 @@ export default function Home() {
         </figure>
         <div className="flex flex-col gap-5 max-w-screen-md mx-auto">
           <p>With the individual CSS modules now advancing independently of each other, the "CSS3" term has naturally died off, but this has had unintended consequences.</p>
-          <p>It's created a perception that CSS is a bit static, with developers seemingly paying less attention to new CSS features.</p>
+          <p>It's created a perception that CSS is a bit static, with developers seemingly paying less attention to new CSS features, or at least less aware about.</p>
           <p>It's a lot harder to promote lots of little advancements compared to a memorable catch-all buzzword.</p>
           <p>And that is seemingly the realisation that the CSS Working Group have arrived at...</p>
         </div>
